@@ -1,11 +1,14 @@
 #grid-con{
     display: grid;
     grid-template-areas:
+'button button button button button'  
 'header header header header header  '
 'tool-bar tool-bar menu menu menu'
 'text text text text text '
 'text text text text text '
-'text text text text text '
+'text text text text text '   
+
+
 }
 
 #header{
@@ -50,6 +53,34 @@
             color: cornsilk;
         }
     }
-
+    div{
+        height: 90vh;
+        display: flex;
+       
     
-}
+    }
+    button{
+        height: 20%;
+        font-size: 51px;
+        background-color: blue;
+        animation-name: blink;
+        animation-duration: 5s;
+        animation-iteration-count: 10;
+        position: relative;
+        grid-area: button;
+        justify-content: center;
+        width: 200px;
+
+      
+    }
+    
+    @keyframes blink {
+        0%   {background-color:rgb(100, 42, 42); left:100px; top:100px;}
+        25%  {background-color:rgb(122, 122, 13); left:200px; top:0px;}
+        50%  {background-color:rgb(13, 148, 36); left:300px; top:400px;}
+        75%  {background-color:blue; left:0px; top:400px;}
+        100% {background-color:yellowgreen; left:100px; top:100px;}
+
+        
+        
+    }
