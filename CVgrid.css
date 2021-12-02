@@ -59,7 +59,7 @@
        
     
     }
-    button{
+    #button1{
         height: 20%;
         font-size: 51px;
         background-color: blue;
@@ -83,4 +83,16 @@
 
         
         
+    }
+    body
+    h1{
+    text-align: center;
+    color: purple;
+    }
+    #Fname{
+    background-color: red
+    
+    }
+    .Z{
+    background-color: yellow
     }
